@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <button class="btn-calc button-toggle">Переключить на режим ввода</button>
+      <div class="screen">
+        <input type="text" id="screen" class="screen__input" disabled />
+      </div>
+      <button class="btn-calc clear-btn">C</button>
+      <div class="view button-view">
+        <div class="keys">
+          <button class="btn-calc operator-btn">/</button>
+          <button class="btn-calc operator-btn">*</button>
+          <button class="btn-calc operator-btn">-</button>
+          <button class="btn-calc operator-btn">8</button>
+          <button class="btn-calc numberBtn">9</button>
+          <button class="btn-calc operator-btn">+</button>
+          <button class="btn-calc numberBtn">5</button>
+          <button class="btn-calc numberBtn">6</button>
+          <button class="btn-calc numberBtn">7</button>
+          <button class="btn-calc numberBtn">2</button>
+          <button class="btn-calc numberBtn">3</button>
+          <button class="btn-calc numberBtn">4</button>
+          <button class="btn-calc zero-btn number-btn">0</button>
+          <button class="btn-calc numberBtn">1</button>
+        </div>
+      </div>
+      <div class="view input-view hidden">
+        <div class="input-group">
+          <label for="first-number">Первое число:</label>
+          <input type="number" class="first-number" id="first-number" />
+        </div>
+        <div class="input-group">
+          <label for="operator">Оператор:</label>
+          <select class="operator" id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="second-number">Второе число:</label>
+          <input type="number" class="second-number" id="second-number" />
+        </div>
+      </div>
+      <button class="btn-calc result-btn">=</button>
+    </div>
+    <script src="./kod.js"></script>
+  </body>
+</html>
